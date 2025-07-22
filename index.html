@@ -53,7 +53,8 @@
         class="container position-relative d-flex align-items-center justify-content-between"
       >
         <a
-          href="index.html"
+          href="#"
+          onclick="document.getElementById('hero').scrollIntoView({behavior: 'smooth'}); return false;"
           class="logo d-flex align-items-center me-auto me-xl-0"
         >
           <!-- Uncomment the line below if you also wish to use an image logo -->
@@ -363,7 +364,11 @@
 
       <!-- Stats Section -->
       <section id="stats" class="stats section dark-background">
-        <img src="assets/images/stats-bg.jpg" alt="" data-aos="fade-in" />
+        <img
+          src="assets/images/stats-bg.png"
+          alt=""
+          style="object-fit: cover"
+        />
 
         <div
           class="container position-relative"
@@ -897,7 +902,7 @@
                     </div>
                     <div class="col-lg-2 text-center">
                       <img
-                        src="assets/images/testimonial/har.jpg"
+                        src="assets/images/testimonial/har.png"
                         class="img-fluid testimonial-img"
                         alt=""
                       />
@@ -930,7 +935,7 @@
                     </div>
                     <div class="col-lg-2 text-center">
                       <img
-                        src="assets/images/testimonial/mukesh.jpeg"
+                        src="assets/images/testimonial/mukesh.png"
                         class="img-fluid testimonial-img"
                         alt=""
                       />
@@ -1063,7 +1068,7 @@
               <div
                 class="swiper-slide event-item d-flex flex-column justify-content-end"
                 style="
-                  background-image: url(assets/images/events/alienware.jpg);
+                  background-image: url(assets/images/events/alienware.png);
                 "
               >
                 <h3></h3>
@@ -1234,7 +1239,7 @@
           <div class="row g-0" data-aos="fade-up" data-aos-delay="100">
             <div
               class="col-lg-4 reservation-img"
-              style="background-image: url(assets/images/booking.jpg)"
+              style="background-image: url(assets/images/booking.png)"
             ></div>
 
             <div
@@ -1408,9 +1413,9 @@
                 <a
                   class="glightbox"
                   data-gallery="images-gallery"
-                  href="assets/images/gallery/g3.jpg"
+                  href="assets/images/gallery/g3.png"
                   ><img
-                    src="assets/images/gallery/g3.jpg"
+                    src="assets/images/gallery/g3.png"
                     class="img-fluid"
                     alt=""
                 /></a>
@@ -1480,7 +1485,7 @@
       <!-- Contact Section -->
       <section id="contact" class="contact section">
         <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
+        <div class="container section-title">
           <h2>Contact</h2>
           <p>
             <span>Need Help?</span>
@@ -1489,7 +1494,7 @@
         </div>
         <!-- End Section Title -->
 
-        <div class="container" data-aos="fade-up" data-aos-delay="50">
+        <div class="container">
           <div class="mb-5">
             <iframe
               style="width: 100%; height: 400px"
@@ -1502,11 +1507,7 @@
 
           <div class="row gy-4">
             <div class="col-md-6">
-              <div
-                class="info-item d-flex align-items-center"
-                data-aos="fade-up"
-                data-aos-delay="50"
-              >
+              <div class="info-item d-flex align-items-center">
                 <i class="icon bi bi-geo-alt flex-shrink-0"></i>
                 <div>
                   <h3>Address</h3>
@@ -1517,11 +1518,7 @@
             <!-- End Info Item -->
 
             <div class="col-md-6">
-              <div
-                class="info-item d-flex align-items-center"
-                data-aos="fade-up"
-                data-aos-delay="50"
-              >
+              <div class="info-item d-flex align-items-center">
                 <i class="icon bi bi-telephone flex-shrink-0"></i>
                 <div>
                   <h3>Call Us</h3>
@@ -1532,11 +1529,7 @@
             <!-- End Info Item -->
 
             <div class="col-md-6">
-              <div
-                class="info-item d-flex align-items-center"
-                data-aos="fade-up"
-                data-aos-delay="50"
-              >
+              <div class="info-item d-flex align-items-center">
                 <i class="icon bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h3>Email Us</h3>
@@ -1547,11 +1540,7 @@
             <!-- End Info Item -->
 
             <div class="col-md-6">
-              <div
-                class="info-item d-flex align-items-center"
-                data-aos="fade-up"
-                data-aos-delay="50"
-              >
+              <div class="info-item d-flex align-items-center">
                 <i class="icon bi bi-clock flex-shrink-0"></i>
                 <div>
                   <h3>Opening Hours<br /></h3>
@@ -1565,13 +1554,7 @@
             <!-- End Info Item -->
           </div>
 
-          <form
-            action="forms/contact.php"
-            method="post"
-            class="php-email-form"
-            data-aos="fade-up"
-            data-aos-delay="10"
-          >
+          <form action="forms/contact.php" method="post" class="php-email-form">
             <div class="row gy-4">
               <div class="col-md-6">
                 <input
@@ -1659,7 +1642,7 @@
             <div>
               <h4>Opening Hours</h4>
               <p>
-                <strong>Mon-Sat:</strong> <span>11AM - 9PM</span><br />
+                <strong>Mon-Sat:</strong> <span>11AM - 23PM</span><br />
                 <strong>Sunday</strong>: <span>Closed</span>
               </p>
             </div>
@@ -1687,7 +1670,7 @@
         <div class="credits">
           Developed by
           <a href="https://www.linkedin.com/in/mukesh-rajan/" target="_blank"
-            >Mukesh</a
+            >Mukesh R</a
           >
         </div>
       </div>
